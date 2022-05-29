@@ -1,7 +1,7 @@
 {
     "name": "No Consent",
     "description": "Prevent CMP consent box from popping up",
-    "version": "0.3",
+    "version": "0.4",
     "manifest_version": 2,
     "content_scripts": [ {
         "js": [ "content.js" ],
