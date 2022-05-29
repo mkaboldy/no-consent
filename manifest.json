@@ -1,10 +1,11 @@
 {
     "name": "No Consent",
     "description": "Prevent CMP consent box from popping up",
-    "version": "0.1",
-    "manifest_version": 3,
-    "background": {
-        "service_worker": "background.js"
-    },
-    "permissions": ["storage", "activeTab", "scripting"]
+    "version": "0.2",
+    "manifest_version": 2,
+    "content_scripts": [ {
+        "js": [ "content.js" ],
+        "matches": [ "*://*/*" ]
+     } ],
+    "permissions": []
 }
