@@ -1,15 +1,15 @@
 setTimeout(()=>{
   // frequent cookie consent popups
-  ids = ['#gdpr-consent-tool-wrapper','#qc-cmp2-container','#cookie-banner']
-  ids.forEach (id => {
+  const selectors = ['.fc-consent-root','.newsletter-layer','#gdpr-consent-tool-wrapper','#qc-cmp2-container','#cookie-banner']
+  selectors.forEach (selector => {
     try {
-      let popup = document.querySelector(id);
+      let popup = document.querySelector(selector);
       if (popup) {
         popup.remove();
-        console.log(id + ' removed');
+        console.log(selector + ' removed');
       }    
     } catch (e) {
-      console.error(e,id);
+      console.error(e,selector);
     }  
   }); 
   // MKB bank
