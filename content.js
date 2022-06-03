@@ -1,6 +1,6 @@
 setTimeout(()=>{
   // frequent cookie consent popups
-  const selectors = ['.fc-consent-root','.newsletter-layer','#gdpr-consent-tool-wrapper','#qc-cmp2-container','#cookie-banner']
+  const selectors = ['.truste_box_overlay', '.truste_overlay', '.fc-consent-root','.newsletter-layer','#gdpr-consent-tool-wrapper','#qc-cmp2-container','#cookie-banner']
   selectors.forEach (selector => {
     try {
       let popup = document.querySelector(selector);
