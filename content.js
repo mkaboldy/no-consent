@@ -1,6 +1,6 @@
 setTimeout(()=>{
   // frequent cookie consent popups
-  const selectors = ['#cookie_alert','.js-consent-banner', '#alert18', '.truste_box_overlay', '.truste_overlay', '.fc-consent-root','.newsletter-layer','#gdpr-consent-tool-wrapper','#qc-cmp2-container','#cookie-banner']
+  const selectors = ['._iph_brk', '#cookie-notice','#onetrust-consent-sdk','#cookie_alert','.js-consent-banner', '#alert18', '.truste_box_overlay', '.truste_overlay', '.fc-consent-root','.newsletter-layer','#gdpr-consent-tool-wrapper','#qc-cmp2-container','#cookie-banner']
   selectors.forEach (selector => {
     try {
       let popup = document.querySelector(selector);
