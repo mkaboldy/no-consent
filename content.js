@@ -28,4 +28,13 @@ setTimeout(()=>{
   if (location.href.includes('babanet.hu')) {
     document.querySelector('body').style = '';
   }
+  // ingatlan.com
+  if (location.href.includes('ingatlan.com')) {
+    setTimeout(()=> {
+      document.querySelector('body').style = '';
+      document.querySelector('#CybotCookiebotDialog').remove();
+      document.querySelector('#CybotCookiebotDialogBodyUnderlay').remove();
+      console.log('CybotCookiebotDialog removed');  
+    },2000);
+  }
 },500);
