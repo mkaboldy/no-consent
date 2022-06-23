@@ -1,5 +1,5 @@
 # nocmp
-Chrome extension to prevent CMP consent box from popping up
+Chrome extension to prevent consent boxes from popping up
 
 ## install
 - Open <a href="chrome://extensions" target="_blank">chrome://extensions</a>
