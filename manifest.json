@@ -1,7 +1,7 @@
 {
     "name": "No Consent",
     "description": "Prevent cookie consent box from popping up",
-    "version": "0.15",
+    "version": "0.16",
     "manifest_version": 2,
     "content_scripts": [ {
         "js": [ "content.js" ],
