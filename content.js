@@ -12,6 +12,11 @@ setTimeout(()=>{
       console.error(e,selector);
     }  
   });
+  // HTML block-scroll
+  const html = document.getElementsByTagName("HTML")[0];
+  if (html) {
+    html.classList.remove('block-scroll');
+  }
   // Body overflow generic
   const body = document.getElementsByTagName("BODY")[0];
   if (body) {
