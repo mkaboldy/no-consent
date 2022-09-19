@@ -1,6 +1,6 @@
 setTimeout(()=>{
   // frequent cookie consent popups
-  const selectors = ['#vip2-info-layer','#otherm2','#gdpr-new-container','.global-gdpr-container','.app-newsletter-popup','.app-newsletter-modal','.cookie-consent-modal','#onetrust-consent-sdk','#ez-cookie-dialog-wrapper','.eu-cookie-compliance-banner', '#twcc__mechanism','#CybotCookiebotDialog','#qc-cmp2-container','._iph_brk', '#cookie-notice','#onetrust-consent-sdk','#cookie_alert','.js-consent-banner', '#alert18', '.truste_box_overlay', '.truste_overlay', '.fc-consent-root','.newsletter-layer','#gdpr-consent-tool-wrapper','#qc-cmp2-container','#cookie-banner']
+  const selectors = ['#vip2-info-layer','#otherm3','#otherm2','#gdpr-new-container','.global-gdpr-container','.app-newsletter-popup','.app-newsletter-modal','.cookie-consent-modal','#onetrust-consent-sdk','#ez-cookie-dialog-wrapper','.eu-cookie-compliance-banner', '#twcc__mechanism','#CybotCookiebotDialog','#qc-cmp2-container','._iph_brk', '#cookie-notice','#onetrust-consent-sdk','#cookie_alert','.js-consent-banner', '#alert18', '.truste_box_overlay', '.truste_overlay', '.fc-consent-root','.newsletter-layer','#gdpr-consent-tool-wrapper','#qc-cmp2-container','#cookie-banner']
   selectors.forEach (selector => {
     try {
       let popup = document.querySelector(selector);
@@ -21,6 +21,7 @@ setTimeout(()=>{
   const body = document.getElementsByTagName("BODY")[0];
   if (body) {
     body.style.overflow = "visible !important";
+    body.classList.remove('modal-open');
   }
   
   popup = document.querySelector('#gdpr-consent-modal');
